@@ -1,0 +1,26 @@
+.slick-slide {
+    img{
+
+        width: 100% ;
+    }
+    
+    
+}
+.slick-slide{
+    position: relative;
+
+
+}
+.home-container{
+    display: flex!important;
+    justify-content: center;
+}
+.text-wrap{
+position: absolute;
+top: 33%;
+}
+.slick-dots{
+    display: block;
+    position: absolute;
+    bottom: 50px;
+}

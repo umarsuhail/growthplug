@@ -1,0 +1,39 @@
+.navbar-nav{
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+.navbar{
+    padding: 0;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+}
+.nav-link{
+    height: 60px;
+    line-height: 3;
+}
+.nav-item{
+    width: 100%;
+}
+.nav-item.active{
+    border-bottom: 3px solid orange;
+}
+.navbar-brand{
+    margin: 0;
+    img{
+        max-width: 300px;
+        height: 60px;
+    }
+}
+.ONLINE{
+    background-color: #daa23c;
+    min-width: 300px;
+    height: 61px;
+    a{
+        color:white !important;
+
+    }
+}
