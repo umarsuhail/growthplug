@@ -3,7 +3,7 @@ import team1 from '../images/team1.png'
 export default class MeetTeam extends Component {
     render() {
         return (
-            <div class="card">
+            <div class="card animated fadeIn">
             <img src={this.props.image} class="card-img-top" alt="..."/>
             <div class="card-body">
               <h5 class="card-title">{this.props.title}</h5>

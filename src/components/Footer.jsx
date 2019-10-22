@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import footerImage from "../images/footerImage.PNG";
 import FooterContent from "./FooterContent";
 import "../css/animate.css";
+import ScrollAnimation from 'react-animate-on-scroll';
+
 import FooterContainer from "./footerContainer";
 import crowd from "../images/crowd.jpeg";
 import crowd2 from "../images/crowd2.jpeg";
@@ -104,7 +106,7 @@ export default class Footer extends Component {
             <FooterContent title="Membership">
               <div>
                 <i
-                  style={{ color: "orange", fontSize: "3em" }}
+                  style={{ color: "#daa23c", fontSize: "3em" }}
                   className="material-icons"
                 >
                   star_border
@@ -113,7 +115,7 @@ export default class Footer extends Component {
             </FooterContent>
             <FooterContent title="Languages">
               <i
-                style={{ color: "orange", fontSize: "3em" }}
+                style={{ color: "#daa23c", fontSize: "3em" }}
                 className="material-icons"
               >
                 message
@@ -127,7 +129,7 @@ export default class Footer extends Component {
             <FooterContent title="Membership">
               <div>
                 <i
-                  style={{ color: "orange", fontSize: "3em" }}
+                  style={{ color: "#daa23c", fontSize: "3em" }}
                   className="material-icons"
                 >
                   star_border
@@ -136,7 +138,7 @@ export default class Footer extends Component {
             </FooterContent>
             <FooterContent title="Languages">
               <i
-                style={{ color: "orange", fontSize: "3em" }}
+                style={{ color: "#daa23c", fontSize: "3em" }}
                 className="material-icons"
               >
                 message
@@ -153,20 +155,27 @@ export default class Footer extends Component {
               Our Services
             </h1>
             <div className="row" style={{ justifyContent: "center" }}>
-              <img src={crowd} alt="avatar" className="avatar" />
-              <img src={crowd2} alt="avatar" className="avatar" />
-              <img src={crowd1} alt="avatar" className="avatar" />
-              <img src={crowd} alt="avatar" className="avatar" />
-              <img src={crowd1} alt="avatar" className="avatar" />
+              <ScrollAnimation animateIn="fadeInLeft">
+                <img src={crowd} alt="avatar" className="avatar" />
+                <img src={crowd2} alt="avatar" className="avatar" />
+                <img src={crowd1} alt="avatar" className="avatar" />
+                <img src={crowd} alt="avatar" className="avatar" />
+                <img src={crowd1} alt="avatar" className="avatar" />
+              </ScrollAnimation>
             </div>
           </div>
           <div className="container">
+            
             <div className="row" style={{ justifyContent: "center" }}>
+            <ScrollAnimation animateIn="fadeInRight">
+
               <img src={crowd1} alt="avatar" className="avatar" />
               <img src={crowd} alt="avatar" className="avatar" />
               <img src={crowd2} alt="avatar" className="avatar" />
               <img src={crowd} alt="avatar" className="avatar" />
               <img src={crowd1} alt="avatar" className="avatar" />
+              </ScrollAnimation>
+
             </div>
           </div>
         </div>

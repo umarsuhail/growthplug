@@ -2,7 +2,7 @@ import React, { Component } from "react";
 export default class Blogupdate extends Component {
   render() {
     return (
-        <div class="card column" style={{width:'18rem'}}>
+        <div class="card column animated fadeIn" style={{width:'18rem'}}>
           <img src={this.props.image} class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title" style={{color:'orange'}}>Blog Title goes here..</h5>
