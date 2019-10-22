@@ -15,6 +15,7 @@ import team3 from './images/team3.png'
 import team4 from './images/team4.png'
 import awards from './images/awards.png'
 import MeetTeam from './components/MeetTeam'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
                 </h1>
           </div>
           <div className="container card-deck " style={{ margin: '0 auto' }}>
+            
             <MeetTeam image={team1} title="Todd Montgomery" title2="Physician" />
             <MeetTeam image={team2} title="Todd Montgomery" title2="Physician" />
             <MeetTeam image={team3} title="Todd Montgomery" title2="Physician" />
@@ -68,8 +70,10 @@ function App() {
               Awards
                 </h1>
           </div>
-          <img src={awards} className="image-responsive" style={{ width: '100%' }} alt="awards"></img>
+          <ScrollAnimation animateIn="fadeIn">
 
+            <img src={awards} className="image-responsive" style={{ width: '100%' }} alt="awards"></img>
+          </ScrollAnimation>
         </div>
         <div className="Locations">
 
