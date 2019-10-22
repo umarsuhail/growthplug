@@ -35,7 +35,7 @@ export default class Footer extends Component {
                       <h3 className="" style={{ color: "black" }}>
                         <b>Dr. Maud McDonald</b>
                       </h3>
-                      <p className="mb-4" style={{ fontSize: "18px;" }}>
+                      <p className="mb-4" style={{ fontSize: "18px" }}>
                         {" "}
                         General Physician
                       </p>
@@ -76,7 +76,7 @@ export default class Footer extends Component {
                       <h3 className="" style={{ color: "black" }}>
                         <b>Dr. Matilda Figueroa</b>
                       </h3>
-                      <p className="mb-4" style={{ fontSize: "18px;" }}>
+                      <p className="mb-4" style={{ fontSize: "18px" }}>
                         {" "}
                         General Physician
                       </p>
