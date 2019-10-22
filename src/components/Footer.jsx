@@ -6,6 +6,8 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 import FooterContainer from "./footerContainer";
 import crowd from "../images/crowd.jpeg";
+import char2 from "../images/char2.png";
+
 import crowd2 from "../images/crowd2.jpeg";
 import crowd1 from "../images/crowd1.jpg";
 
@@ -23,7 +25,7 @@ export default class Footer extends Component {
                       className=" img d-flex align-self-stretch align-items-end "
                       className="image-place"
                     >
-                      <img src={footerImage} alt="footerimage"></img>
+                      <img src={footerImage} style={{height:'100%'}} alt="footerimage"></img>
                     </div>
                   </div>
                 </div>
@@ -64,7 +66,7 @@ export default class Footer extends Component {
                       className=" img d-flex align-self-stretch align-items-end "
                       className="image-place"
                     >
-                      <img src={footerImage} alt="footerimage"></img>
+                      <img src={char2} style={{height:'100%'}} alt="footerimage"></img>
                     </div>
                   </div>
                 </div>
@@ -198,7 +200,7 @@ export default class Footer extends Component {
                 services.
               </span>
             </div>
-            <div className="col-6 float-right" style={{ maxHeight: 320 }}>
+            <div className="col-6 float-right" style={{ maxHeight: 320,textAlign:'left' }}>
               <ul className="float-left column">
                 <li>AETNA</li>
                 <li>Assurant/DHA</li> <li>Delta Dental</li> <li>Guardian</li>{" "}
