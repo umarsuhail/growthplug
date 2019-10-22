@@ -13,7 +13,7 @@ import team1 from './images/team1.png'
 import team2 from './images/team2.png'
 import team3 from './images/team3.png'
 import team4 from './images/team4.png'
-
+import awards from './images/awards.png'
 import MeetTeam from './components/MeetTeam'
 
 function App() {
@@ -24,37 +24,56 @@ function App() {
         <SimpleSlider />
         <Card></Card>
         <Footer></Footer>
-        <div className="container" style={{marginTop:80}}>
-        <div className="float-left" style={{marginBottom:50}}>
+        <div className="container" style={{ marginTop: 80 }}>
+          <div className="float-left" style={{ marginBottom: 50 }}>
             <h3>Blog Update</h3>
           </div>
           <div className="float-right">
             <button className="btn btn-primary view">View All</button>
           </div>
           <div className="container row" style={{
-          margin: '0 auto',
-          justifyContent: 'center'
-        }}>
+            margin: '0 auto',
+            justifyContent: 'center'
+          }}>
 
-          <BlogUpdate image={blog3} />
-          <BlogUpdate image={blog2} />
-          <BlogUpdate image={blog1} />
-          <BlogUpdate image={blog2} />
-          <BlogUpdate image={blog1} />
-          <BlogUpdate image={blog3} />
-    
+            <BlogUpdate image={blog3} />
+            <BlogUpdate image={blog2} />
+            <BlogUpdate image={blog1} />
+            <BlogUpdate image={blog2} />
+            <BlogUpdate image={blog1} />
+            <BlogUpdate image={blog3} />
 
-        </div>
-        </div>
-          <div className="col-12 meet-team ">
-          <div className="container card-deck " style={{margin:'0 auto'}}>
-        <MeetTeam image={team1} title="Todd Montgomery" title2="Physician"/>
-        <MeetTeam image={team2} title="Todd Montgomery" title2="Physician"/>
-        <MeetTeam image={team3} title="Todd Montgomery" title2="Physician"/>
-        <MeetTeam image={team4} title="Todd Montgomery" title2="Physician"/>
 
           </div>
+        </div>
+        <div className="col-12 meet-team" style={{ padding: 30 }}>
+          <div className="title" >
+            <h1>
+              Meet Our Team
+                </h1>
           </div>
+          <div className="container card-deck " style={{ margin: '0 auto' }}>
+            <MeetTeam image={team1} title="Todd Montgomery" title2="Physician" />
+            <MeetTeam image={team2} title="Todd Montgomery" title2="Physician" />
+            <MeetTeam image={team3} title="Todd Montgomery" title2="Physician" />
+            <MeetTeam image={team4} title="Todd Montgomery" title2="Physician" />
+
+          </div>
+          <button className="view btn mt-3">View All</button>
+        </div>
+
+        <div className="Awards col-12" style={{ background: '#f6f6f6' }}>
+          <div className="title" >
+            <h1>
+              Awards
+                </h1>
+          </div>
+          <img src={awards} className="image-responsive" style={{ width: '100%' }} alt="awards"></img>
+
+        </div>
+        <div className="Locations">
+
+        </div>
       </div>
 
     </div>
