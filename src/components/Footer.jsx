@@ -2,10 +2,12 @@ import React, { Component } from 'react'
 import footerImage from '../images/footerImage.PNG'
 import FooterContent from './FooterContent'
 import '../css/animate.css'
+import FooterContainer from './footerContainer'
 export default class Footer extends Component {
     render() {
         return (
-            <div className="fadeIn">
+            <div>
+
                 <div className="row col-sm-12 col-md-12 col-lg-12">
     <div className=" col-lg-6" style={{paddingLeft: '0!important'}}>
 
@@ -70,12 +72,15 @@ export default class Footer extends Component {
     </div>
   </div>
   
-<div className="container-fluid">
-<div className="col-xl-6 col-md-6 col-sm-12 row float-left">
+<div className="footer-wrapper">
+<div className="col-xl-6 col-md-6 col-sm-12 row float-left m-0 p-0" style={{height:'280px'}}>
   <FooterContent  title="Membership">
-  <i style={{color:'orange', fontSize:'3em'}} className="material-icons">
+    <div>
+    <i style={{color:'orange', fontSize:'3em'}} className="material-icons">
 star_border
 </i>
+    </div>
+
   </FooterContent>
   <FooterContent title="Languages">
   <i style={{color:'orange', fontSize:'3em'}} className="material-icons">
@@ -84,20 +89,27 @@ message
        </FooterContent>
 
   </div>  
-  <div className="col-xl-6 col-md-6 col-sm-12 row">
-  <FooterContent title="Membership" >
-  <i style={{color:'orange', fontSize:'3em'}} className="material-icons">
+  <div className="col-xl-6 col-md-6 col-sm-12 row float-right m-0 p-0" style={{height:'280px'}}>
+  <FooterContent  title="Membership">
+    <div>
+    <i style={{color:'orange', fontSize:'3em'}} className="material-icons">
 star_border
 </i>
-       </FooterContent>
-  <FooterContent title="Languages" > 
+    </div>
+
+  </FooterContent>
+  <FooterContent title="Languages">
   <i style={{color:'orange', fontSize:'3em'}} className="material-icons">
 message
 </i>
-  </FooterContent>
+       </FooterContent>
 
-  </div>  
+  </div> 
     </div>  
+    <div>
+    <FooterContainer></FooterContainer>
+
+    </div>
 
             </div>
         )

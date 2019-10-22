@@ -21,3 +21,36 @@
   color: #09d3ac;
 }
 
+.icon-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border: 1px solid #5555;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+}
+.second-card{
+  justify-content: center;
+  background: #f7eee5;
+  border: none;
+
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+.footer-content-wrapper{
+  background: #f7eee5;
+
+}
+.ReactGridGallery_tile-overlay:hover{
+  background-color: #282c34 !important;
+
+}

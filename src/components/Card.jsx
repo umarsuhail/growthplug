@@ -16,7 +16,7 @@ export default class Card extends Component {
 
             <div>
      
-                    <div className="card">
+                    <div className="card first-card">
                         <img src={yelp} alt="yelp" />
                         <span>
                     Lorem ipsum dolor sit amet, conse
