@@ -15,7 +15,7 @@ export default class Footer extends Component {
   render() {
     return (
       <div>
-        <div className="row col-sm-12 col-md-12 col-lg-12">
+        <div className="row col-sm-12 col-md-12 col-lg-12 bottom-start">
           <div className=" col-lg-6" style={{ paddingLeft: "0!important" }}>
             <section className="ftco-about ftco-no-pt ftco-no-pb img ftco-section  twocard">
               <div className="row d-flex">
@@ -29,7 +29,7 @@ export default class Footer extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6 col-lg-6 pl-lg-4 py-5">
+                <div className="col-md-6 col-lg-6 col-sm-12 pl-lg-4 py-5">
                   <div className="row justify-content-start pb-3">
                     <div className="col-md-12 heading-section ftco-animate f1car pb-5 fadeInUp ftco-animated">
                       <h3 className="" style={{ color: "black" }}>
@@ -57,16 +57,16 @@ export default class Footer extends Component {
               </div>
             </section>
           </div>
-          <div className=" col-lg-6 ">
+          <div className="col-md-6 col-lg-6 col-sm-12 ">
             <section className="ftco-about ftco-no-pt ftco-no-pb img ftco-section  twocard">
               <div className="row d-flex">
-                <div className="col-md-6 col-lg-6 d-flex p-0">
+                <div className="col-md-6 col-lg-6 col-sm-12 d-flex p-0">
                   <div className="   img-about img d-flex align-items-stretch gig-top">
                     <div
                       className=" img d-flex align-self-stretch align-items-end "
                       className="image-place"
                     >
-                      <img src={char2} style={{height:'100%'}} alt="footerimage"></img>
+                      <img src={footerImage} style={{height:'100%'}} alt="footerimage"></img>
                     </div>
                   </div>
                 </div>
@@ -103,7 +103,7 @@ export default class Footer extends Component {
         <div className="footer-wrapper">
           <div
             className="col-xl-6 col-md-6 col-sm-12 row float-left m-0 p-0"
-            style={{ height: "280px" }}
+            // style={{ height: "280px" }}
           >
             <FooterContent title="Membership">
               <div>
@@ -126,7 +126,7 @@ export default class Footer extends Component {
           </div>
           <div
             className="col-xl-6 col-md-6 col-sm-12 row float-right m-0 p-0"
-            style={{ height: "280px" }}
+            // style={{ height: "280px" }}
           >
             <FooterContent title="Membership">
               <div>
@@ -182,15 +182,15 @@ export default class Footer extends Component {
           </div>
         </div>
         <div
-          className="col-12 d-flex"
+          className="col-12 d-flex insurance-container"
           style={{
             background: "rgb(218, 162, 60)",
-            height: 320,
+          
             alignItems: "center"
           }}
         >
           <div className="container">
-            <div className="col-6 float-left">
+            <div className="col-md-6 col-lg-6 col-sm-12 float-left">
               <h1>Insurance</h1>
               <span>
                 We accept all kinds of PPO and indemnity insurance. A preferred
@@ -200,7 +200,7 @@ export default class Footer extends Component {
                 services.
               </span>
             </div>
-            <div className="col-6 float-right" style={{ maxHeight: 320,textAlign:'left' }}>
+            <div className="col-md-6 col-lg-6 col-sm-12 float-right" style={{ maxHeight: 320,textAlign:'left' }}>
               <ul className="float-left column">
                 <li>AETNA</li>
                 <li>Assurant/DHA</li> <li>Delta Dental</li> <li>Guardian</li>{" "}

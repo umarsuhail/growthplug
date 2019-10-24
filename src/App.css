@@ -77,3 +77,14 @@
 .title{
   padding: 20px;
 }
+.insurance-container{
+  padding: 35px;
+}
+@media only screen and (max-width: 600px) {
+
+  .first-card{
+    max-width: 100% !important;
+    position:  relative !important;
+    top:0 !important;
+  }
+}
