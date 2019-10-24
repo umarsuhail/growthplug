@@ -18,6 +18,13 @@ import MeetTeam from './components/MeetTeam'
 import ScrollAnimation from 'react-animate-on-scroll';
 import IndexRoutes from "./Routes/IndexRoutes";
 import { Route, Switch } from "react-router-dom";
+import AwardsContainer from "./components/AwardsContainer";
+import award1 from './images/award1.png'
+import award2 from './images/award2.png'
+import award3 from './images/award3.png'
+import award4 from './images/award4.png'
+import award5 from './images/award5.png'
+import award6 from './images/award6.png'
 
 function App() {
   return (
@@ -76,16 +83,33 @@ function App() {
                   <button className="view btn mt-3">View All</button>
                 </div>
 
-                <div className="Awards col-12" style={{ background: '#f6f6f6' }}>
+                <div className="Awards col-12 d-flex" style={{justifyContent:'center', textAlign:'center',flexDirection:'column', background: '#f6f6f6' }}>
                   <div className="title" >
                     <h1>
                       Awards
                 </h1>
                   </div>
+                  <div className="row" style={{padding:0 ,justifyContent:'center'}}>
                   <ScrollAnimation animateIn="fadeIn">
-
-                    <img src={awards} className="image-responsive" style={{ width: '100%' }} alt="awards"></img>
+                  <AwardsContainer image={award1}></AwardsContainer>
                   </ScrollAnimation>
+                  <ScrollAnimation animateIn="fadeIn">
+                  <AwardsContainer image={award2}></AwardsContainer>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn="fadeIn">
+                  <AwardsContainer image={award3}></AwardsContainer>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn="fadeIn">
+                  <AwardsContainer image={award4}></AwardsContainer>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn="fadeIn">
+                  <AwardsContainer image={award5}></AwardsContainer>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn="fadeIn">
+                  <AwardsContainer image={award6}></AwardsContainer>
+                  </ScrollAnimation>
+                  </div>
+                  
                 </div>
                 <div className="Locations">
 
